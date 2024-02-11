@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-11 04:58:11 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThHRTU5Mzk7MjAyNC0wMi0xMTswNDoyMzowMyBQTTszMjU3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThHRTU5Mzk7MjAyNC0wMi0xMTswNDo1ODoxMSBQTTszOzMzNzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pricePerShare" type="Real" array="False" size=""/>
+            <declare name="currentStock" type="Real" array="False" size=""/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="changeInValue" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Price per share: &quot;" newline="True"/>
+            <input variable="pricePerShare"/>
+            <output expression="&quot;Enter Current Stock: &quot;" newline="True"/>
+            <input variable="currentStock"/>
+            <output expression="&quot;Enter Quantity: &quot;" newline="True"/>
+            <input variable="quantity"/>
+            <assign variable="changeInValue" expression="(currentStock - pricePerShare) * quantity"/>
+            <output expression="&quot;Change in value totals to: &quot; &amp; changeInValue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
