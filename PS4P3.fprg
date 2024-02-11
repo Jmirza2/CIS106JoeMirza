@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-11 05:35:37 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThHRTU5Mzk7MjAyNC0wMi0xMTswNTowMjozNSBQTTszMjYw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThHRTU5Mzk7MjAyNC0wMi0xMTswNTozNTozNyBQTTsxOzMzNzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="meal1" type="Real" array="False" size=""/>
+            <declare name="meal2" type="Real" array="False" size=""/>
+            <declare name="meal3" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the total cost of meal 1: &quot;" newline="True"/>
+            <declare name="tip" type="Real" array="False" size=""/>
+            <declare name="tip2" type="Real" array="False" size=""/>
+            <declare name="tip3" type="Real" array="False" size=""/>
+            <input variable="meal1"/>
+            <assign variable="tip" expression="meal1 * 0.15"/>
+            <declare name="totalWithTip" type="Real" array="False" size=""/>
+            <declare name="totalWithTip2" type="Real" array="False" size=""/>
+            <declare name="totalWithTip3" type="Real" array="False" size=""/>
+            <assign variable="totalWithTip" expression="meal1 + tip"/>
+            <output expression="&quot;Total: &quot; &amp; meal1" newline="True"/>
+            <output expression="&quot;Tip: &quot; &amp; tip" newline="True"/>
+            <output expression="&quot;Total with tip: &quot; &amp; totalWithTip" newline="True"/>
+            <output expression="&quot;Enter the total cost for meal 2: &quot;" newline="True"/>
+            <input variable="meal2"/>
+            <assign variable="tip2" expression="meal2 * 0.18"/>
+            <assign variable="totalWithTip2" expression="meal2 + tip2"/>
+            <output expression="&quot;Total: &quot; &amp; meal2" newline="True"/>
+            <output expression="&quot;Tip: &quot; &amp; tip2" newline="True"/>
+            <output expression="&quot;Total with Tip: &quot; &amp; totalWithTip2" newline="True"/>
+            <output expression="&quot;Enter the total cost of Meal 3: &quot;" newline="True"/>
+            <input variable="meal3"/>
+            <assign variable="tip3" expression="meal3 * 0.20"/>
+            <assign variable="totalWithTip3" expression="meal3 + tip3"/>
+            <output expression="&quot;Total: &quot; &amp; meal3" newline="True"/>
+            <output expression="&quot;Tip: &quot; &amp; tip3" newline="True"/>
+            <output expression="&quot;Total with Tip: &quot; &amp; totalWithTip3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
