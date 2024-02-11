@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-11 02:54:50 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVZJOFI2UVU7MjAyNC0wMi0xMTswMjowOToyMSBQTTszMzYy"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVZJOFI2UVU7MjAyNC0wMi0xMTswMjo1NDo1MCBQTTsxOzM0NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="examScore1" type="Real" array="False" size=""/>
+            <declare name="examScore2" type="Real" array="False" size=""/>
+            <declare name="totalScore1" type="Real" array="False" size=""/>
+            <declare name="totalScore2" type="Real" array="False" size=""/>
+            <declare name="totalScore" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your first exam score: &quot;" newline="True"/>
+            <input variable="examScore1"/>
+            <output expression="&quot;Enter your second exam score: &quot;" newline="True"/>
+            <input variable="examScore2"/>
+            <assign variable="totalScore1" expression="0.6 * examScore1"/>
+            <assign variable="totalScore2" expression="0.4 * examScore2"/>
+            <output expression="&quot;The first exam is worth: &quot; &amp; totalScore1" newline="True"/>
+            <output expression="&quot;The second exam is worth: &quot; &amp; totalScore2" newline="True"/>
+            <assign variable="totalScore" expression="totalScore1 + totalScore2"/>
+            <output expression="&quot;Your total score is: &quot; &amp; totalScore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
