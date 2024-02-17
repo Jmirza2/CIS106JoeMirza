@@ -8,4 +8,8 @@ extendedPrice = quantityItem * unitPrice
 tax = extendedPrice * 0.07
 total = extendedPrice + tax
 
-print(total)
+print("Quantity: ", quantityItem)
+print("Unit Price: ", unitPrice)
+print("Extended Price: ", extendedPrice)
+print("Tax: ", tax)
+print("Total: ", total)
