@@ -1,4 +1,4 @@
-name = input("What is the name of you appliance? ")
+name = input("What is the name of your appliance? ")
 applianceCost = float(input("What is the cost of you appliance? "))
 
 if applianceCost >= 1000:
