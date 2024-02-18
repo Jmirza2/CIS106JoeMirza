@@ -9,7 +9,6 @@ if adjGrossPay > 50000.00:
 else:
   taxRate = adjGrossPay * 0.10
 
-# incomeTax = adjGrossPay * taxRate
 
 if taxRate < 0:  
   taxRate = 100.00 
