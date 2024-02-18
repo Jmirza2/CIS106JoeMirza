@@ -1,5 +1,5 @@
 name = input("What is the name of your appliance? ")
-applianceCost = float(input("What is the cost of you appliance? "))
+applianceCost = float(input("What is the cost of your appliance? "))
 
 if applianceCost >= 1000:
   warranty = applianceCost * 0.10
