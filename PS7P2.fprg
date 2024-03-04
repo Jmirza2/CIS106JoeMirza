@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-03 05:24:09 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU9DUjVNT0c7MjAyNC0wMy0wMzswNDo1OTozOSBQTTszMzcx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU9DUjVNT0c7MjAyNC0wMy0wMzswNToyNDowOSBQTTsxOzM0Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="strtValue" type="Integer" array="False" size=""/>
+            <declare name="stpValue" type="Integer" array="False" size=""/>
+            <declare name="incValue" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter start value: &quot;" newline="True"/>
+            <input variable="strtValue"/>
+            <output expression="&quot;Enter your stop value: &quot;" newline="True"/>
+            <input variable="stpValue"/>
+            <output expression="&quot;Enter your increment value: &quot;" newline="True"/>
+            <input variable="incValue"/>
+            <assign variable="count" expression="strtValue"/>
+            <while expression="count &lt;= stpValue">
+                <output expression="count" newline="True"/>
+                <assign variable="count" expression="incValue + count"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
